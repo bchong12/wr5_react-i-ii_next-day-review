@@ -12,15 +12,21 @@ export default class Header extends React.Component {
         }
     }
 
-    getUserName() {
+    componentDidMount() {
+        this.getUserName();
+    }
 
+    getUserName() {
+        const name = window.prompt('What is your name?');
+
+        this.setState({ name })
     }
 
     render() {
+        const { name } = this.state;
+
         return (
-            {/*
-                We want the view to display "<NAME'S> Special List".
-            */}
+            <h2>{name}'s Special List</h2>
         )
     }
 }
