@@ -1,3 +1,6 @@
+Live example: https://codesandbox.io/s/github/esellors/wr5_react-i-ii_next-day-review
+Be sure to open up the console on bottom right of page in desktop view.
+
 ## Review for React lifecycle methods: 
 
 1) componentDidMount
